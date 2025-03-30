@@ -7,8 +7,6 @@ from .LLM_model import get_chatbot_response, get_gemini_response
 from django.views.decorators.csrf import csrf_exempt
 import numpy as np
 import cv2
-from django.contrib.auth import login
-from django.contrib.auth.models import User
 
 def home(request):
     return render(request, 'index.html')
